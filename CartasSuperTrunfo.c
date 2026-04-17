@@ -49,7 +49,7 @@ int main() {
     scanf("%f", &area1);
     printf("6) PIB: Quanto é o Produto Interno Bruto de %s em bilhões de reais (ex: 66.00)? ", cidade1);
     scanf("%f", &pib1);
-    printf("7) Pontos Turísticos: Quantos Pontos Turísticos existem em %s (ex: 50)? ", cidade1);
+    printf("7) Pontos Turísticos: Quantos Pontos Turísticos existem em %s (ex: 25)? ", cidade1);
     scanf("%d", &pontos_turisticos1);
 
     printf("\n=======================================================================================================================================================================\n\n");
@@ -95,7 +95,7 @@ int main() {
     scanf("%f", &area2);
     printf("6) PIB: Quanto é o Produto Interno Bruto de %s em bilhões de reais (ex: 1100.00)? ", cidade2);
     scanf("%f", &pib2);
-    printf("7) Pontos Turísticos: Quantos Pontos Turísticos existem em %s (ex: 50)? ", cidade2);
+    printf("7) Pontos Turísticos: Quantos Pontos Turísticos existem em %s (ex: 25)? ", cidade2);
     scanf("%d", &pontos_turisticos2);
 
     printf("\n=======================================================================================================================================================================\n\n");
@@ -167,10 +167,24 @@ int main() {
     }
 
     if (super_poder1 > super_poder2) {
-        printf("Super Poder: Carta 1 venceu (%d)\n", super_poder1 > super_poder2);
+        printf("Super Poder: Carta 1 venceu (%d)\n\n", super_poder1 > super_poder2);
     } else {
-        printf("Super Poder: Carta 2 venceu (%d)\n", super_poder1 > super_poder2);
+        printf("Super Poder: Carta 2 venceu (%d)\n\n", super_poder1 > super_poder2);
     }
     
+    printf("=======================================================================================================================================================================\n\n");
+
+    // Comparação entre atributos específicos
+    printf("Comparação de Cartas (Atributo: Área):\n\n");
+    printf("Carta 1 - %s: %.2f km²\n", cidade1, area1);
+    printf("Carta 2 - %s: %.2f km²\n", cidade2, area2);
+    if (area1 > area1) {
+        printf("Resultado: Carta 1 (%s) venceu!\n\n", cidade1);
+    } else {
+        printf("Resultado: Carta 2 (%s) venceu!\n\n", cidade2);
+    }
+
+    printf("Fim do Programa!\n");
+
     return 0;
 }
