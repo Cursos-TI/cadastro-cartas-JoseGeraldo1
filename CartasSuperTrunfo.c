@@ -178,7 +178,7 @@ int main() {
     printf("Comparação de Cartas (Atributo: Área):\n\n");
     printf("Carta 1 - %s: %.2f km²\n", cidade1, area1);
     printf("Carta 2 - %s: %.2f km²\n", cidade2, area2);
-    if (area1 > area1) {
+    if (area1 > area2) {
         printf("Resultado: Carta 1 (%s) venceu!\n\n", cidade1);
     } else {
         printf("Resultado: Carta 2 (%s) venceu!\n\n", cidade2);
