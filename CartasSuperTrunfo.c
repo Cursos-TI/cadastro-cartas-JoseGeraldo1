@@ -148,9 +148,15 @@ int main() {
         printf("PIB: Carta 2 venceu (%d)\n", pib1 > pib2);
     }
 
+    if (pontos_turisticos1 == pontos_turisticos2) {
+        printf("Pontos Turísticos: Houve empate\n");
+    }
+
     if (pontos_turisticos1 > pontos_turisticos2) {
         printf("Pontos Turísticos: Carta 1 venceu (%d)\n", pontos_turisticos1 > pontos_turisticos2);
-    } else {
+    }
+
+    if (pontos_turisticos2 > pontos_turisticos1) {
         printf("Pontos Turísticos: Carta 2 venceu (%d)\n", pontos_turisticos1 > pontos_turisticos2);
     }
 
