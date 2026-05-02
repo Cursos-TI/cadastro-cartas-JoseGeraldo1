@@ -23,6 +23,9 @@ int main() {
     float super_poder1;
     float super_poder2;
 
+    // Divisão entre trechos distintos do programa
+    printf("=======================================================================================================================================================================\n\n");
+
     // Instruções para introduzir o usuário ao programa
     printf("Olá, Jogador! Bem-vindo ao Super Trunfo Cidades!\n");
     printf("Vamos guiá-lo quanto às regras do jogo. É simples.\n");
@@ -30,7 +33,6 @@ int main() {
     printf("Estes dados irão compor duas Cartas: Carta 1 e Carta 2.\n");
     printf("Ao fim da rodada, a Carta com melhores atributos vencerá.\n\n");
 
-    // Divisão entre trechos distintos do programa
     printf("=======================================================================================================================================================================\n\n");
     
     // Coleta de dados para a Carta 1
@@ -66,17 +68,20 @@ int main() {
 
     // Cálculo para a Densidade Populacional
     densidade1 = (float) populacao1 / area1;
+
     printf("Densidade Populacional: %.2f hab/km²\n", densidade1);
 
     // Cálculo para o PIB per Capita
     pib_per1 = pib1 * 1000000000 / (float) populacao1;
+
     printf("PIB per Capita: %.2f reais\n", pib_per1);
 
-    // Cálculo para a densidade populacional invertida
+    // Cálculo para a densidade populacional Invertida
     float densidade_pop_inv1 = 1 / densidade1;
 
     // Cálculo para o Super Poder
     super_poder1 = (float) populacao1 + area1 + pib1 + (float) pontos_turisticos1 + pib_per1 + densidade_pop_inv1;
+
     printf("Super Poder da Carta 1: %.2f\n\n", super_poder1);
 
     printf("=======================================================================================================================================================================\n\n");
@@ -112,17 +117,20 @@ int main() {
 
     // Cálculo para a Densidade Populacional
     densidade2 = (float) populacao2 / area2;
+
     printf("Densidade Populacional: %.2f hab/km²\n", densidade2);
 
     // Cálculo para o PIB per Capita
     pib_per2 = pib2 * 1000000000 / (float) populacao2;
+
     printf("PIB per Capita: %.2f reais\n", pib_per2);
 
-    // Cálculo para a densidade populacional invertida
+    // Cálculo para a densidade populacional Invertida
     float densidade_pop_inv2 = 1 / densidade2;
 
     // Cálculo para o Super Poder
     super_poder2 = (float) populacao2 + area2 + pib2 + (float) pontos_turisticos2 + pib_per2 + densidade_pop_inv2;
+
     printf("Super Poder da Carta 2: %.2f\n\n", super_poder2);
 
     printf("=======================================================================================================================================================================\n\n");
