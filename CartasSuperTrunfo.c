@@ -289,7 +289,7 @@ int main() {
         }
     }
     
-    if (atributo1 == 1) {
+    if (atributo1 && atributo2) {
         printf("\n### CARTA 1 VENCEU! ###\n");
         } else if (atributo1 != atributo2) {
             printf("\n### HOUVE EMPATE! ###\n");
